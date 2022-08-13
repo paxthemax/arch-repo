@@ -1,0 +1,6 @@
+*.log
+*.pkg.tar.xz
+*.pkg.tar.zst
+pkg
+src
+InputMonoNarrow*.ttf
