@@ -1,0 +1,44 @@
+pkgname='paxthemax-custom-fonts'
+pkgver=1.0.0
+pkgrel=1
+pkgdesc='Custom fonts curated by paxthemax'
+arch=('any')
+url='https://github.com/paxthemax/arch-custom-fonts'
+license=('MIT')
+source=(
+    '30-font-aliases.conf'
+    '75-joypixels.conf'
+    'InputMonoNarrow-Bold.ttf'
+    'InputMonoNarrow-BoldItalic.ttf'
+    'InputMonoNarrow-Italic.ttf'
+    'InputMonoNarrow-Regular.ttf')
+
+sha256sums=('ef60468018a9791442a15394723c0436477ee64064c21f8ee9dc0d078eed4834'
+    '4bdf58ee96641954c9cf65dd5f5f3202134a672b80a0d1380de682d7c09db9f2'
+    'a24b3f75e7bfe794f0853b009cab0e80fc99f0b3f48927543999f6834fe05d18'
+    '50538d6f67b508a21b1a027180b15de0d49303f31620bd15407a143bb3bfde8a'
+    '5d57430e91b9d99ae6719ac90f9bf5acb6dd25ee770d6172fc76bb435e24cdb0'
+    '7cc30589018c98922470d22e285f7ec3cc9f46b741ae0a01afaa346939e8fe4a')
+
+package() {
+    depends=(
+        'ttf-dejavu'
+        'ttf-heuristica'
+        'ttf-liberation'
+        'noto-fonts'
+        'cantarell-fonts'
+        'ttf-droid'
+        'ttf-lato'
+        'ttf-opensans'
+        'ttf-signika'
+        'otf-font-awesome'
+        'ttf-joypixels')
+
+    for font in InputMono*; do
+        install -Dm644 -t "${pkgdir}/usr/share/fonts/input-mono/" "${font}"
+    done
+
+    install -Dm644 -t "${pkgdir}/etc/fonts/conf.d/" 30-font-aliases.conf
+    install -Dm644 -t "${pkgdir}/etc/fonts/conf.d/" 75-joypixels.conf
+}
+
