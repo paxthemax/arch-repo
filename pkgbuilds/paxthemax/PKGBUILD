@@ -15,6 +15,7 @@ package() {
         'linux-firmware'
         'linux-headers'
         'kernel-modules-hook'
+        'mkinitcpio-encrypt-detached-header'
         'logrotate'
         'man-pages'
         'btrfs-progs'

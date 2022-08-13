@@ -1,6 +1,6 @@
 pkgname='paxthemax-custom-fonts'
 pkgver=1.0.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Custom fonts curated by paxthemax'
 arch=('any')
 url='https://github.com/paxthemax/arch-custom-fonts'
