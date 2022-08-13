@@ -23,14 +23,12 @@ sha256sums=('ef60468018a9791442a15394723c0436477ee64064c21f8ee9dc0d078eed4834'
 package() {
     depends=(
         'ttf-dejavu'
-        'ttf-heuristica'
         'ttf-liberation'
         'noto-fonts'
         'cantarell-fonts'
         'ttf-droid'
         'ttf-lato'
         'ttf-opensans'
-        'ttf-signika'
         'otf-font-awesome'
         'ttf-joypixels')
 

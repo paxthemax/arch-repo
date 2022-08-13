@@ -159,14 +159,14 @@ package() {
         'xorg-server-xwayland'
         'wl-clipboard'
         'python-i3ipc'
-        'gtk-theme-arc-gruvbox-git'
+        # 'gtk-theme-arc-gruvbox-git'
         'waybar'
         'light'
         'slurp'
         'qt5-wayland'
         'qt6-wayland'
         'wtype'
-        'wlrctl'
+        # 'wlrctl'
         'wldash'
 
         # fonts
