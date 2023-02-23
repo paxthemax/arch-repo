@@ -1,5 +1,5 @@
 pkgname='paxthemax'
-pkgver=1.0.1
+pkgver=1.0.2
 pkgrel=1
 pkgdesc='System packages installed on paxthemax machines'
 arch=('any')
@@ -154,7 +154,7 @@ package() {
         'bluez-utils'
 
         # ui
-        'sway'
+        'hyprland'
         'swaybg'
         'swaylock'
         'xorg-server-xwayland'
