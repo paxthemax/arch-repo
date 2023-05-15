@@ -1,6 +1,6 @@
 pkgname='paxthemax-custom-fonts'
-pkgver=1.0.0
-pkgrel=2
+pkgver=1.1.0
+pkgrel=1
 pkgdesc='Custom fonts curated by paxthemax'
 arch=('any')
 url='https://github.com/paxthemax/arch-custom-fonts'
@@ -24,7 +24,6 @@ package() {
     depends=(
         'ttf-dejavu'
         'ttf-liberation'
-        'noto-fonts'
         'cantarell-fonts'
         'ttf-droid'
         'ttf-lato'
